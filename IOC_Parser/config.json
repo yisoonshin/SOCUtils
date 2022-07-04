@@ -1,0 +1,9 @@
+{
+    "virustotal": {
+		"key": "<input here>"
+        "rate_limit_min": 133
+    },
+    "abuseipdb": {
+            "key": "<input here>"
+    }
+}
