@@ -4,6 +4,11 @@ Many an analyst has experienced this - you're in a last-minute crunch to process
 
 Feel free, however, to review these during your downtime to supplement your learning as well as contribute edits that you feel address edge cases or align code to best practices. We don't claim to be experts, but we're here to help others "git 'er done!".
 
+## IOC Parser
+Have you ever been handed a long list of IOCs of possibly varying quality, and needed a more efficient way to sift through the most important ones? This script will automate enumeration via VirusTotal and AbuseIPDB APIs (you must have your own keys) and output an Excel doc with the IOCs categorized by type and sorted by number of vendors flagging the IOC as malicious/suspicious. Functionality includes:
+* Flagging whether IP addresses are used as shared hosting (often leads to false positives)
+* Associating passive DNS records, communicating files, and community comments
+
 ## ParkingCheck
 Some of our teammates perform subdomain fuzzing on a routine basis to see if threat actors are performing clones of our partners' sites. Their goal was to de-prioritize partner domains that were in a "parked" state since the threat would not be as immediate. This module aims to identify parked domains via request-based heuristics:
 * If the domain can't be visited at all, indicating lack of a DNS A record (ConnectionError)
