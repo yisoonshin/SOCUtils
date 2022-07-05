@@ -14,3 +14,6 @@ Some of our teammates perform subdomain fuzzing on a routine basis to see if thr
 * If the domain can't be visited at all, indicating lack of a DNS A record (ConnectionError)
 * If it can be reached, does the root page include references to parking, registration, etc.?
 * If we try to visit a nonsensical URI, does it return the same content as the homepage as opposed to returning a 404 error?
+
+## cryptoTools
+No fully fleshed out encryption policy for team project files? You can try using the scripts in this module to generate a public key pair (RSA 4096 block) and AES128 cipher. The symmetric cipher is used for transforming the content for speed, and its details (.conf file) encrypted and decrypted using the RSA keys.
